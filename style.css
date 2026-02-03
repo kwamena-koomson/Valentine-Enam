@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
   /* Optional: size of each image (adjust as needed) */
-  background-size: 500px 500px, 500px 500px, 500px 500px, 500px 500px;
+background-size: 25% auto, 25% auto, 25% auto, 25% auto;
 
   height: 100vh;
 }
@@ -85,4 +85,10 @@ h1 {
   max-width: 100%;    /* don’t overflow container */
   flex-shrink: 1;     /* allow shrinking inside flex container */
   margin-bottom: 20px; /* spacing from h1 */
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 40% auto;
+  }
 }
